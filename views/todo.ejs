@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo list</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <form action="/" method="post">
+      <h1>Todo list</h1>
+      <input type="text" class="text" name="title" placeholder="title" />
+      <input type="text" name="description" placeholder="description" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div class="list">
+      <div class="entry">
+        <% for(var i=0; i<tasks.length; i++){ %>
+        <h2><%= tasks[i].title %></h2>
+        <p> <%= tasks[i].description %></p>
+        <a href="/edit/<%= tasks[i]._id %>">Edit</a>
+        <a href="/delete/<%= tasks[i]._id %>">Delete</a>
+        <hr/>
+        <%}%>
+      </div>
+    </div>
+  </body>
+</html>

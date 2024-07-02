@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit list</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <h1>Edit list for <% for(var i=0; i<tasks.length; i++){ %>
+                     <% if(tasks[i]._id==id){ %>
+                        <%= tasks[i].title %>
+                        <%}%>
+                    <%}%>
+                    </h1>
+    <div class="list">
+      <div class="entry">
+        <% for(var i=0; i<tasks.length; i++){ %>
+        <% if(tasks[i]._id==id){ %>
+            <form action="/edit/<%= tasks[i]._id %>" method="post">
+                <input type="text" class="text" name="title" placeholder="<%= tasks[i].title %>" />
+                <input type="text" name="description" placeholder="<%= tasks[i].description %>" />
+                <input type="submit" value="Submit" />
+              </form>  
+            <%}%>
+        <%}%>
+      </div>
+    </div>
+  </body>
+</html>
