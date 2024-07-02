@@ -39,7 +39,7 @@ Users can create, Update, View and Delete their activities for easy task managem
 4. Clone the Repository by copy and run the following command in Git.
 
    ```bash
-   git clone https://github.com/karanagrawal273/Online-Judge-Platform.git
+   git clone https://github.com/karanagrawal273/QuestQueue.git
   
 5. Install the dependencies on your local
    ```bash
