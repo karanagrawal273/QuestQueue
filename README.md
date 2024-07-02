@@ -9,9 +9,9 @@ Users can create, Update, View and Delete their activities for easy task managem
 <h2>Pages:</h2>
 
  1. Home Page
-    <image src="Screenshot_pages/Home.jpg" />
+    <image src="Screenshots/Home.jpg" />
  2. Edit Page
-    <image src="Screenshot_pages/Edit.jpg" />
+    <image src="Screenshots/Edit.jpg" />
 
 <h2>Technologies Used:</h2>
 <h3>1. FRONTEND</h3>
